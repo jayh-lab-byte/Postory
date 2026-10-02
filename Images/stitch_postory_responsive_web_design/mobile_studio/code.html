@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "state-unknown-bg": "#FFFBEB", "tertiary-fixed-dim": "#ffb95f", "on-primary-container": "#eeefff", "on-secondary-fixed-variant": "#8c0053", "on-tertiary-fixed": "#2a1700", "surface-bright": "#f8f9ff", "on-primary": "#ffffff", "secondary-fixed": "#ffd9e4", "state-verified": "#059669", "on-tertiary": "#ffffff", "surface-tint": "#0053db", "canvas-surface": "#F1F5F9", "on-primary-fixed-variant": "#003ea8", "text-display": "#0F172A", "surface-dim": "#cbdbf5", "on-error": "#ffffff", "on-background": "#0b1c30", "on-secondary": "#ffffff", "on-error-container": "#93000a", "platform-blog": "#03C75A", "surface": "#f8f9ff", "on-surface": "#0b1c30", "canvas-subtle": "#F8FAFC", "primary-fixed": "#dbe1ff", "on-surface-variant": "#434655", "secondary-container": "#fd56a7", "on-tertiary-container": "#ffeedd", "primary": "#004ac6", "error": "#ba1a1a", "text-secondary": "#64748B", "tertiary-fixed": "#ffddb8", "surface-container-low": "#eff4ff", "platform-instagram": "#E1306C", "inverse-on-surface": "#eaf1ff", "canvas-base": "#FFFFFF", "on-primary-fixed": "#00174b", "state-unknown": "#D97706", "text-tertiary": "#94A3B8", "text-primary": "#1E293B", "tertiary": "#784b00", "on-secondary-fixed": "#3e0022", "error-container": "#ffdad6", "surface-container-high": "#dce9ff", "state-verified-bg": "#ECFDF5", "outline-variant": "#c3c6d7", "primary-container": "#2563eb", "surface-container-lowest": "#ffffff", "state-observed-bg": "#F0F9FF", "secondary-fixed-dim": "#ffb0cd", "border-subtle": "#E2E8F0", "border-strong": "#CBD5E1", "on-secondary-container": "#600037", "surface-variant": "#d3e4fe", "state-observed": "#0284C7", "inverse-primary": "#b4c5ff", "on-tertiary-fixed-variant": "#653e00", "surface-container": "#e5eeff", "platform-youtube": "#FF0000", "inverse-surface": "#213145", "platform-facebook": "#1877F2", "secondary": "#b4136d", "coral-vivid": "#F43F5E", "sky-vivid": "#3B82F6", "primary-fixed-dim": "#b4c5ff", "surface-container-highest": "#d3e4fe", "background": "#f8f9ff", "tertiary-container": "#996100", "platform-threads": "#000000", "outline": "#737686" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2.25rem", "space-lg": "1.5rem", "gutter": "1.25rem", "space-md": "1rem", "margin": "1.5rem", "space-sm": "0.5rem" }, fontFamily: { "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "code-sm": ["JetBrains Mono"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-xl": ["Inter"], "title-sm": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "headline-lg-mobile": ["22px", { lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "code-sm": ["12px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "500" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "700" }], "title-sm": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "400" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-canvas-base/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-14 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface -ml-2 transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="postory_logo_horizontal.png" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VcoyDp9H_RbXu2vkiSO32uPdlUURlWBWrJPzx1pEZEfV6tVjeUIfsxPqb3hwP0WSMDWHZh7VdB6LpSC-0hogYKtuoIQcd-9VyxsIygdbiFRG_sg2ZuNweLfu4F8wbBCWDh39ZTw6SuOu7NWTls8so2BBPQIP9oCBiYT02VriAMh-q9Ton9vE5QsxVWKJxcSwuVGivn7lXYzwmcCUWTnIAQXgsCpL7SVrVQ_yZRou_vOR1JADlCIXpXN2iXDWFq5QjYxKw4TecJ"/><h1 class="font-title-sm text-title-sm text-text-display truncate ml-1">Editor Studio</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-safe bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Dynamic Platform Picker (Horizontal Scroll) -->
+<div class="w-full bg-surface-container-lowest px-gutter py-space-sm shadow-sm sticky top-14 z-30">
+<div class="flex items-center gap-space-sm overflow-x-auto no-scrollbar scroll-smooth">
+<!-- Naver Blog (Active) -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-platform-blog/10 text-platform-blog shadow-sm flex-shrink-0 transition-transform active:scale-95" type="button">
+<span class="w-2 h-2 rounded-full bg-platform-blog animate-pulse"></span>
+<span class="font-label-md text-label-md font-bold">네이버 블로그</span>
+<span class="bg-platform-blog text-on-primary rounded-full px-1.5 py-0.2 font-label-sm text-label-sm">준비완료</span>
+</button>
+<!-- Instagram -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant flex-shrink-0 transition-colors hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[15px] text-platform-instagram">photo_camera</span>
+<span class="font-label-md text-label-md">인스타그램</span>
+</button>
+<!-- Threads -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant flex-shrink-0 transition-colors hover:bg-surface-container-high" type="button">
+<span class="font-code-sm text-code-sm font-bold text-platform-threads leading-none">@</span>
+<span class="font-label-md text-label-md">스레드</span>
+</button>
+<!-- Facebook -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant flex-shrink-0 transition-colors hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[15px] text-platform-facebook">thumb_up</span>
+<span class="font-label-md text-label-md">페이스북</span>
+</button>
+<!-- Shorts Script -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant flex-shrink-0 transition-colors hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[15px] text-platform-youtube">play_arrow</span>
+<span class="font-label-md text-label-md">쇼츠 대본</span>
+</button>
+</div>
+</div>
+<div class="px-gutter pt-space-md flex flex-col gap-space-md">
+<!-- Postory Fact & Quality Ledger Banner -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-state-verified-bg flex items-center justify-center">
+<span class="material-symbols-outlined text-state-verified text-[18px]">verified</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-text-display">품질 검증 통과</span>
+<span class="font-headline-md text-headline-md text-state-verified font-bold">98점</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">네이버 C-Rank 알고리즘 호환 구조화 완료</p>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-state-verified-bg text-state-verified flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span>
+<span class="font-label-sm text-label-sm">안전 발행 가능</span>
+</div>
+</div>
+<!-- Detail Metric Tags -->
+<div class="grid grid-cols-3 gap-2 mt-2 pt-2 bg-canvas-subtle p-2 rounded-lg">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-text-secondary">스팸 점수</span>
+<span class="font-label-md text-label-md text-state-verified font-bold">0.1% (안전)</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-text-secondary">AI 클리셰 표현</span>
+<span class="font-label-md text-label-md text-state-verified font-bold">0건 제거됨</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-text-secondary">팩트 검증률</span>
+<span class="font-label-md text-label-md text-primary font-bold">100% 매칭</span>
+</div>
+</div>
+</div>
+<!-- Title Selector Section -->
+<div class="w-full flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span>
+          고클릭률 추천 제목 (3개)
+        </label>
+<span class="font-label-sm text-label-sm text-text-tertiary">탭하여 적용</span>
+</div>
+<!-- Title Options Carousel -->
+<div class="flex flex-col gap-2" id="title-selection-group">
+<!-- Option 1: Selected -->
+<div class="title-option p-3 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-2.5 cursor-pointer transition-all active:scale-[0.99] ring-2 ring-primary bg-primary-fixed/20" data-selected="true">
+<div class="mt-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[12px]">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-state-verified-bg text-state-verified">CTR +18% 예상</span>
+<span class="font-label-sm text-label-sm text-text-tertiary">경험 중심형</span>
+</div>
+<p class="font-title-sm text-title-sm text-text-display font-semibold leading-snug">성수동 감성 브런치 '오프셋' 솔직 후기! 주말 웨이팅 꿀팁과 추천 메뉴 3가지</p>
+</div>
+</div>
+<!-- Option 2 -->
+<div class="title-option p-3 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-2.5 cursor-pointer transition-all active:scale-[0.99]" data-selected="false">
+<div class="mt-0.5 w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-transparent text-[12px]">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-text-secondary">정보성</span>
+<span class="font-label-sm text-label-sm text-text-tertiary">검색 노출 최적화</span>
+</div>
+<p class="font-body-md text-body-md text-text-primary leading-snug">성수 카페거리 브런치 맛집 오프셋 내돈내산 메뉴 가격 및 주차 총정리</p>
+</div>
+</div>
+<!-- Option 3 -->
+<div class="title-option p-3 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-2.5 cursor-pointer transition-all active:scale-[0.99]" data-selected="false">
+<div class="mt-0.5 w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-transparent text-[12px]">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-text-secondary">감성형</span>
+<span class="font-label-sm text-label-sm text-text-tertiary">SNS 바이럴형</span>
+</div>
+<p class="font-body-md text-body-md text-text-primary leading-snug">나만 알고 싶은 성수동 통창 햇살 맛집, 오프셋에서 보낸 완벽한 일요일 브런치</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Blog Live Preview Canvas -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Article Header Meta -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-platform-blog text-on-primary flex items-center justify-center font-bold text-[11px]">N</div>
+<span class="font-label-md text-label-md text-text-secondary">네이버 스마트에디터 ONE 양식</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-state-verified"></span>
+<span class="font-label-sm text-label-sm text-state-verified">글자수 1,840자</span>
+<span class="text-border-strong font-body-sm">·</span>
+<span class="font-label-sm text-label-sm text-text-secondary">사진 5장</span>
+</div>
+</div>
+<!-- Main Title Display -->
+<div class="p-3 bg-canvas-subtle rounded-xl">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-text-display font-bold" id="current-title-text">성수동 감성 브런치 '오프셋' 솔직 후기! 주말 웨이팅 꿀팁과 추천 메뉴 3가지</h2>
+</div>
+<!-- Content Block 1: Intro -->
+<div class="flex flex-col gap-2">
+<p class="font-body-md text-body-md text-text-primary leading-relaxed">
+          주말이면 발 디딜 틈 없는 성수동 골목길, 통창 너머로 따스한 햇살과 은은한 버터 향이 흐르는 브런치 카페 <span class="bg-primary-fixed text-on-primary-fixed px-1 rounded font-medium">오프셋(Offset)</span>을 직접 방문했습니다. SNS에서 입소문을 타며 웨이팅 필수 코스로 자리 잡은 이곳의 진솔한 매력을 세세하게 기록해 봅니다.
+        </p>
+</div>
+<!-- Image Slot 1: Exterior / Intro hero -->
+<div class="flex flex-col gap-1.5">
+<div class="relative w-full h-52 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A modern sunlit cafe exterior in Seongsu-dong Seoul with floor-to-ceiling glass windows, warm wood accents, lush indoor plants, clean minimalist architecture, golden hour daylight, stylish urban vibe, cinematic editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0zhKyp1VmIXy3hTfiTd3MR3q5IDhLqt1GHb2zQJ7b4hfAZL5VTFPSW4GDsqTdByuGq7X6piEXrz0siBrwjhs2btm2hjQY9iE8Uh3zA7QNTgp7KtPpMCUPu7dtbkLp9ZlDGoIwrHFNP6AXSHGCN80SNJBI-TboWa1-93nFof6LCpGuDdMav5yPD3BmQv2gk_m77n3aYbDPjCeDWEcou_tkVxnqeYdvlTQ3YmdbQKqljfiJDQu2HNJb"/>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-text-display/75 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">image</span>
+<span>사진 1 / 대표 썸네일</span>
+</div>
+<button aria-label="사진 변경" class="absolute bottom-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-text-display shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary text-center">▲ 성수동 조용한 골목에 위치한 오프셋 외관 (오전 11시 방문)</p>
+</div>
+<!-- Content Block 2: Subheading & Tips -->
+<div class="flex flex-col gap-2 pt-2">
+<h3 class="font-title-sm text-title-sm text-text-display font-bold flex items-center gap-1.5">
+<span class="w-1.5 h-4 rounded-full bg-primary"></span>
+          주말 웨이팅 시간 &amp; 꿀팁 체크포인트
+        </h3>
+<p class="font-body-md text-body-md text-text-primary leading-relaxed">
+          토요일 오전 11시 20분 기준, 테이블링 대기 등록 시 앞 팀은 총 8팀이었습니다. 평균 회전율을 고려했을 때 약 35분 소요되었는데요. 현장 캐치테이블 태블릿은 <span class="font-semibold text-text-display">오전 10시 50분부터</span> 활성화되니 10분 일찍 도착해 선등록하시는 것을 강력히 권장합니다.
+        </p>
+</div>
+<!-- Image Slot 2: Menu / Food -->
+<div class="flex flex-col gap-1.5">
+<div class="relative w-full h-52 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A gourmet avocado sourdough toast paired with fluffy scrambled eggs, vibrant edible flower garnish, crisp smoked bacon, and iced drip coffee on a minimalist ceramic plate inside a stylish bright cafe interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZuA12VLnnObrt_1ZRT08_r0Ob_v81ibYBfr-yjIZT_HY-R9vae3sPq8WFbpGTpBRjflyPTJkF7e-JbgMp6rVLoaiGhQVlsPkjMkqCPlQRW6H7k2xzp8We00KIcuZpRIPWLpsKpQuxjzekHr41I-xvHnRUGguQjtWqUMUcMGawXpV_CXp7ae1I7rP_-KX0dd-bVUnyi7Ynqh2cxjHE3W0_kHH3yGDlVGSE1jQsYTF_NfqLDIereoKz"/>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-text-display/75 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">image</span>
+<span>사진 2 / 시그니처 플레이트</span>
+</div>
+<button aria-label="사진 변경" class="absolute bottom-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-text-display shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary text-center">▲ 트러플 아보카도 토스트와 하우스 드립 커피 조합</p>
+</div>
+<!-- Content Block 3: Recommendation Details -->
+<div class="flex flex-col gap-2 pt-2">
+<h3 class="font-title-sm text-title-sm text-text-display font-bold flex items-center gap-1.5">
+<span class="w-1.5 h-4 rounded-full bg-primary"></span>
+          놓치면 아쉬운 추천 시그니처 3선
+        </h3>
+<ul class="flex flex-col gap-1.5 font-body-md text-body-md text-text-primary pl-2">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-state-verified text-[16px] mt-0.5">check_circle</span>
+<span><strong>트러플 머쉬룸 에그 베네딕트 (18,500원):</strong> 수란의 익힘 정도와 홀랜다이즈 소스의 산미가 조화로움.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-state-verified text-[16px] mt-0.5">check_circle</span>
+<span><strong>시트러스 리코타 프렌치토스트 (16,000원):</strong> 겉바속촉 브리오슈에 제철 과일 콩포트의 완벽한 밸런스.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-state-verified text-[16px] mt-0.5">check_circle</span>
+<span><strong>피스타치오 아인슈페너 (7,000원):</strong> 견과류 풍미가 묵직하게 감싸는 고소한 시그니처 음료.</span>
+</li>
+</ul>
+</div>
+<!-- Tag Recommendations Block -->
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-platform-blog">tag</span>
+            검색 최적화 태그 추천 (10개)
+          </span>
+<button class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5 active:opacity-75" id="copy-tags-btn" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+            태그만 복사
+          </button>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#성수동브런치</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#성수카페거리맛집</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#성수오프셋</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#성수동데이트</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#내돈내산맛집</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#성수웨이팅꿀팁</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#에그베네딕트</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#프렌치토스트</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#주말나들이</span>
+<span class="px-2.5 py-1 rounded-full bg-canvas-subtle text-text-primary font-label-sm text-label-sm hover:bg-surface-container cursor-pointer transition-colors">#서울브런치투어</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Publish Assist Hub (Sticky Dock) -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-canvas-base/95 backdrop-blur-xl shadow-xl pb-safe px-gutter pt-3">
+<!-- Top Micro status info inside dock -->
+<div class="flex items-center justify-between pb-2 px-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-platform-blog"></span>
+<span class="font-label-sm text-label-sm text-text-secondary">네이버 블로그 에디터 ONE 서식 호환</span>
+</div>
+<span class="font-label-sm text-label-sm text-state-verified font-medium">HTML 클립보드 준비됨</span>
+</div>
+<!-- Quick Action Sub-buttons Grid -->
+<div class="grid grid-cols-2 gap-2 mb-2">
+<!-- Image Package Download Button -->
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-surface-container text-text-primary active:scale-[0.98] transition-transform" id="download-images-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-sky-vivid">folder_zip</span>
+<span class="font-label-md text-label-md font-semibold">사진 전체 받기 (5장)</span>
+</button>
+<!-- Launch Naver Blog External Deep Link -->
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-platform-blog/10 text-platform-blog active:scale-[0.98] transition-transform" href="https://blog.naver.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span class="font-label-md text-label-md font-semibold">네이버 블로그 열기</span>
+</a>
+</div>
+<!-- Main Hero CTA Button: 서식 포함 복사 (Rich Copy) -->
+<button class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-primary-container via-secondary-container to-tertiary-fixed-dim text-on-primary shadow-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-all relative overflow-hidden group" id="rich-copy-btn" type="button">
+<!-- Glow Shimmer highlight -->
+<div class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 pointer-events-none"></div>
+<span class="material-symbols-outlined text-[20px]" id="copy-icon">content_copy</span>
+<span class="font-title-sm text-title-sm font-bold tracking-tight" id="copy-text">서식 포함 원클릭 복사 (Rich Copy)</span>
+</button>
+</div>
+<!-- Interactive Toast Notification Container -->
+<div class="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-text-display text-surface-container-lowest px-4 py-2.5 rounded-full shadow-xl flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none translate-y-[-8px]" id="toast">
+<span class="material-symbols-outlined text-state-verified text-[18px]">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-message">클립보드에 서식이 복사되었습니다!</span>
+</div>
+</div>
+<script>
+  (function () {
+    // 1. Title Selector Interaction
+    const titleOptions = document.querySelectorAll('.title-option');
+    const mainTitleDisplay = document.getElementById('current-title-text');
+
+    titleOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        titleOptions.forEach(opt => {
+          opt.classList.remove('ring-2', 'ring-primary', 'bg-primary-fixed/20');
+          const circle = opt.querySelector('.rounded-full');
+          if (circle) {
+            circle.classList.remove('bg-primary');
+            circle.classList.add('bg-surface-container-high');
+            circle.querySelector('span').classList.add('text-transparent');
+            circle.querySelector('span').classList.remove('text-on-primary');
+          }
+          opt.setAttribute('data-selected', 'false');
+        });
+
+        option.classList.add('ring-2', 'ring-primary', 'bg-primary-fixed/20');
+        const activeCircle = option.querySelector('.rounded-full');
+        if (activeCircle) {
+          activeCircle.classList.add('bg-primary');
+          activeCircle.classList.remove('bg-surface-container-high');
+          activeCircle.querySelector('span').classList.remove('text-transparent');
+          activeCircle.querySelector('span').classList.add('text-on-primary');
+        }
+        option.setAttribute('data-selected', 'true');
+
+        const chosenHeading = option.querySelector('p').textContent;
+        if (mainTitleDisplay) {
+          mainTitleDisplay.textContent = chosenHeading;
+        }
+
+        showToast('선택한 제목이 본문 미리보기에 적용되었습니다.');
+      });
+    });
+
+    // 2. Toast Utility
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toast-message');
+    let toastTimeout = null;
+
+    function showToast(msg) {
+      if (!toast) return;
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastMessage.textContent = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-[-8px]');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-[-8px]');
+      }, 2400);
+    }
+
+    // 3. Rich Copy Action
+    const richCopyBtn = document.getElementById('rich-copy-btn');
+    const copyText = document.getElementById('copy-text');
+    const copyIcon = document.getElementById('copy-icon');
+
+    if (richCopyBtn) {
+      richCopyBtn.addEventListener('click', () => {
+        // Haptic feedback if supported
+        if (navigator.vibrate) {
+          navigator.vibrate(30);
+        }
+
+        // Change button feedback state
+        copyText.textContent = '스마트에디터 양식 복사 완료!';
+        copyIcon.textContent = 'task_alt';
+
+        showToast('블로그 본문과 서식이 복사되었습니다. 에디터에 붙여넣기하세요!');
+
+        setTimeout(() => {
+          copyText.textContent = '서식 포함 원클릭 복사 (Rich Copy)';
+          copyIcon.textContent = 'content_copy';
+        }, 2500);
+      });
+    }
+
+    // 4. Download images action
+    const downloadBtn = document.getElementById('download-images-btn');
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', () => {
+        showToast('포함된 고화질 이미지 5장 압축 다운로드를 시작합니다.');
+      });
+    }
+
+    // 5. Copy tags only action
+    const copyTagsBtn = document.getElementById('copy-tags-btn');
+    if (copyTagsBtn) {
+      copyTagsBtn.addEventListener('click', () => {
+        showToast('블로그 해시태그 10개가 복사되었습니다.');
+      });
+    }
+  })();
+</script></main></body></html>

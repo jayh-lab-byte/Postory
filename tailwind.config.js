@@ -1,0 +1,51 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      colors: {
+        surface: '#f8f9ff',
+        'canvas-base': '#FFFFFF',
+        'canvas-subtle': '#F8FAFC',
+        'canvas-surface': '#F1F5F9',
+        'text-display': '#0F172A',
+        'text-primary': '#1E293B',
+        'text-secondary': '#64748B',
+        'text-tertiary': '#94A3B8',
+        'border-subtle': '#E2E8F0',
+        'border-strong': '#CBD5E1',
+        primary: '#004ac6',
+        'primary-container': '#2563eb',
+        'on-primary': '#ffffff',
+        'sky-vivid': '#3B82F6',
+        'coral-vivid': '#F43F5E',
+        'state-verified': '#059669',
+        'state-verified-bg': '#ECFDF5',
+        'state-observed': '#0284C7',
+        'state-observed-bg': '#F0F9FF',
+        'state-unknown': '#D97706',
+        'state-unknown-bg': '#FFFBEB',
+        'platform-blog': '#03C75A',
+        'platform-instagram': '#E1306C',
+        'platform-facebook': '#1877F2',
+        'platform-threads': '#000000',
+        'platform-youtube': '#FF0000',
+        'surface-container': '#e5eeff',
+        'surface-container-low': '#eff4ff',
+        'primary-fixed': '#dbe1ff',
+      },
+      fontFamily: {
+        sans: ['Inter', 'Pretendard', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+      },
+      boxShadow: {
+        card: '0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.02)',
+        float: '0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03)',
+      },
+      borderRadius: {
+        card: '1rem',
+      },
+    },
+  },
+  plugins: [],
+}
